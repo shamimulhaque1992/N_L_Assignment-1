@@ -1,5 +1,8 @@
 # When and How to Use Generics in TypeScript
 
+## Introduction
+Generics is a way to write reusable types in TypeScript that can handle any type instead of being fixed to just one, like `number` or `string`.
+
 Let say I have a function and i want that to returns whatever I pass in. Now I want it to work with numbers, strings, objects — everything. Here in this case we can use `Generics`.
 
 ---

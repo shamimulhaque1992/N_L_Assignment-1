@@ -1,5 +1,8 @@
 # When and How to Use Pick and Omit in TypeScript
 
+## Introduction
+`Pick` and `Omit` are TypeScript utility types that let us create a new type from an existing one by either keeping only the fields we want or removing the ones we don't need.
+
 Let say I spent some time to make a type or interface now i want a similar type or interface in other place, what should i do? Recreate similar looking type or interface again? We could do that but it will hamper our productivity. Here in this case we can use `Pick` and `Omit` and stopped doing that.
 
 ---
