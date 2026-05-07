@@ -71,3 +71,15 @@ class Student extends Person {
     return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
   }
 }
+
+// Problem 7:
+const getIntersection = (array1: number[], array2: number[]): number[] => {
+  const result: number[] = [];
+
+  array1.forEach((num) => {
+    if (array2.includes(num) && !result.includes(num)) {
+      result.push(num);
+    }
+  });
+  return result;
+};
