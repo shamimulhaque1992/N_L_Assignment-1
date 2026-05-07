@@ -1,5 +1,7 @@
 # When and How to Use Generics in TypeScript
 
+**Question: How do Generics allow you to build reusable components and functions that stay strictly typed regardless of the data structures passed in?**
+
 ## Introduction
 Generics is a way to write reusable types in TypeScript that can handle any type instead of being fixed to just one, like `number` or `string`.
 
@@ -32,6 +34,12 @@ getItem({ id: 1, name: "Kashfee" });
 ```
 
 `T` is just a placeholder. TypeScript figures out the type automatically.
+
+---
+
+## Strictly typed, no matter what you pass in
+
+Even though `T` accepts anything, TypeScript still knows the exact type at the time we call the function. So if we pass a `string`, the return type is `string` — not `any`. We get full type safety and autocompletion without writing separate functions for each type.
 
 ---
 

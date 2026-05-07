@@ -1,5 +1,7 @@
 # When and How to Use Pick and Omit in TypeScript
 
+**Question: How do Pick and Omit utility types prevent code duplication while creating specialized "slices" of a master interface? Discuss how this keeps your code DRY (Don't Repeat Yourself).**
+
 ## Introduction
 `Pick` and `Omit` are TypeScript utility types that let us create a new type from an existing one by either keeping only the fields we want or removing the ones we don't need.
 
@@ -33,6 +35,12 @@ type LoginForm = Pick<User, "email" | "password">;
 ```typescript
 type PublicUser = Omit<User, "password">;
 ```
+
+---
+
+## How this keeps our code DRY
+
+Instead of writing separate types from scratch, both `LoginForm` and `PublicUser` are derived from the same `User` type. So if we ever add or rename a field in `User`, all the sliced types automatically reflect that change — we don't have to touch them one by one. That's exactly what DRY means: one source of truth, no repeated definitions.
 
 ---
 
