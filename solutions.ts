@@ -32,3 +32,9 @@ const checkType = (input: StringOrNumber): string => {
     return "Number";
   }
 };
+
+// Problem 4:
+const getProperty = <X>(object: X, key: keyof X) => {
+  return object[key];
+};
+
