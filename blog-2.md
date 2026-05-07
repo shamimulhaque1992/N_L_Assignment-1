@@ -36,5 +36,4 @@ getItem({ id: 1, name: "Kashfee" });
 ---
 
 ## Conclusion
-
 That's it. One generic type, works with anything. If the shape changes, we only update it in one place and everything typed automatically.
