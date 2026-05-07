@@ -38,3 +38,13 @@ const getProperty = <X>(object: X, key: keyof X) => {
   return object[key];
 };
 
+// Problem 5:
+interface Book {
+  title: string;
+  author: string;
+  publishedYear: number;
+}
+
+const toggleReadStatus = (input: Book): Book & { isRead: boolean } => {
+  return { ...input, isRead: true };
+};
